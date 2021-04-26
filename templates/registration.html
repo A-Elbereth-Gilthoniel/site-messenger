@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>R-Messenger</title>
+    <style>
+                p {
+            font-family: 'Avantgarde', 'TeX Gyre Adventor', 'URW Gothic L', 'BebasNeueRegular', Arial, sans-serif;
+        }
+
+        .button {
+    position: fixed;
+    background-color: #7b88ff;
+    padding: 16px 30px;
+    border-radius: 8px;
+    border: #7b88ff;
+    color: white;
+    z-index: 20;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: white;
+    color: black;
+}
+.marg {
+    margin: 100px 100px 100px 100px
+}
+    </style>
+</head>
+<body>
+<div align="center">
+    <div align="center"><form action="" method="post">
+        <p>Введите ваш email</p>
+        <input type="text" name="email" placeholder="Email" style="padding: 10px;">
+        <p>Введите пароль</p>
+        <input type="password" name="password" placeholder="Password" style="padding: 10px;">
+        <p>Повторите пароль</p>
+        <input type="password" name="repeat_password" placeholder="Password" style="padding: 10px;">
+        <p>Введите ваше имя и фамилию</p>
+        <input type="text" name="username" placeholder="Username" style="padding: 10px;">
+        <p><input type="submit" class="button" value="Зарегистрироваться"></p>
+    </form></div>
+    <p class="marg"><a href="{{ link }}log_in/">Войти</a></p>
+</div>
+</body>
+</html>
